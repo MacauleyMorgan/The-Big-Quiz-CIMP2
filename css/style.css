@@ -215,4 +215,50 @@ border-radius: 5px;
     .button-containers{
         margin-block:20vh;
     }
-}
+    }
+    @media screen and (min-width: 700px) {
+        header {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Blue container */
+        .container,
+        .quiz-container {
+            width: 70vw;
+            margin-inline: 15vw;
+        }
+
+        .container {
+            margin-top: 5vh;
+        }
+
+        /* Answer list */
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        li {
+            width: 30vw;
+            margin-inline: 2.5vw;
+            margin-block: 5vw;
+            padding-block: 5vh;
+            font-size: 1.2rem;
+        }
+
+        /* Id's */
+        #question-text {
+            margin-block: 2vh;
+        }
+
+        #home-page-link {
+            margin-left: -5vw;
+            margin-right: 1vw;
+            padding-inline: 2vw;
+            padding-block: 2vh;
+        }
+        .error-page{
+            padding-inline: 3vw;
+        }
+    }
