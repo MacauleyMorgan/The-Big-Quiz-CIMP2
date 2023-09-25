@@ -137,16 +137,20 @@ In dark mode the wave extension the wave extension gave this information.
 The website was also assessed using the Google chrome lighthouse extension to generate statistics on SEO and accessibility, the findings from the extension are as follows.
 ### Index Page
 Lighthouse data available for the index page when loaded in a mobile format.
+
 ![accessibility](/assets/images/testing/lighthouse/index-lighthouse.png 'Index page mobile')
 
 Lighthouse data available for the index page when loaded in a desktop format.
+
 ![accessibility](/assets/images/testing/lighthouse/index-lighthouse-desktop.png 'Index page desktop')
 
 ### Quiz Page
 Lighthouse data displayed for quiz page when processed in the mobile format.
+
 ![accessibility](/assets/images/testing/lighthouse/quiz-lighthouse.png 'Quiz page mobile')
 
 Lighthouse data displayed for quiz page when processed in the desktop format.
+
 ![accessibility](/assets/images/testing/lighthouse/quiz-lighthouse-desktop.png 'Quiz page desktop')
 
 ### 404 Page
