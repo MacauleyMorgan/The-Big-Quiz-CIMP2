@@ -14,3 +14,31 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
     <script src="https://kit.fontawesome.com/3dbe8c2a5c.js" crossorigin="anonymous"></script>
 </head>
+<body>
+    <!-- Theme button -->
+    <div>
+        <p id="theme-switcher">Click to change to <span id="alt-theme">dark</span> mode</p>
+    </div>
+    <!-- Main game container -->
+    <div class="quiz-container">
+        <header>
+            <a href="index.html" id="home-page-link" class="clickable"><i class="fa-solid fa-house">  H o m e</i></i></a>
+            <h1 class="title" id="title">Let's play!</h1>
+        </header>
+        <!-- Quiz container -->
+        <main class="main-quiz-container">
+            <div id="question-area">
+                <h2 id="question-text">Loading question</h2>
+                <ul id="answers-list"></ul>
+            </div>
+        </main>
+        <footer>
+            <!-- Section for counting remaining questions -->
+            <p id="remaining-question-para">Remaining: 0</p>
+        </footer>
+    </div>
+    <script type="module" src="assets/js/script.js"></script>
+    <script type="module" src="assets/js/questions.js"></script>
+    <script type="module" src="assets/js/theme.js"></script>
+</body>
+</html>
