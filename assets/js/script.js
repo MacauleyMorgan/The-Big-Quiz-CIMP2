@@ -50,6 +50,99 @@ let checkAnswer = (userChoice) => {
     }
 };
 
+/** Add incorrect user selections to an array to display upon end of quiz */
+let addToIncorrectArray = (userChoice) => {
+    let incorrect = current;
+    incorrectAnswers.push(incorrect);
+};
+
+    /** Removes data from local storage */
+let clearSubmissionButtonClicked = () => {
+        const clearSubmissionButton = document.getElementById("clear-submission");
+        clearSubmissionButton.addEventListener("click", () => {
+            /** Removes all data from loaded table */
+            document.getElementById("leaderboard").innerHTML = '';
+    
+            /** Removes all data from local storage */
+            localStorage.removeItem("highScores");
+        });
+    
+};
+
+/** Displays incorrect answers at end of quiz */
+let displayIncorrectArray = () => {
+    let incorrectButton = document.getElementById("show-incorrect");
+    let closeIncorrectButton = document.getElementById("close-incorrect-answers");
+    incorrectButton.addEventListener("click", () => {
+        let table = document.getElementById("wrong-answers");
+        table.innerHTML = "";
+        if (incorrectAnswers.length > 0) {
+            table.innerHTML = `<tr><td>Question</td><td>Answer</td></tr>`;
+            incorrectAnswers.forEach(incorrectAnswer => {
+                let tr = document.createElement('tr');
+                tr.innerHTML = `<td class="table-question">${incorrectAnswer.question}</td><td class="table-answer">${incorrectAnswer.correctAnswer}</td>`;
+                tr.classList.add("wrong-answers");
+                table.appendChild(tr);
+            });
+            closeIncorrectButton.style.display = "inline";
+        } else {
+            table.innerHTML = 'No incorrect answers';
+            closeIncorrectButton.style.display = "inline";
+        }
+    });
+};
+
+/** Hides incorrect answers when button is clicked */
+let hideIncorrectArray = () => {
+    let closeIncorrectButton = document.getElementById('close-incorrect-answers');
+    closeIncorrectButton.addEventListener('click', function (e) {
+        document.getElementById('incorrect-answers-div').innerHTML = '';
+    });
+};
+
+/** Preparation for endgame function */
+let endgamePrep = () => {
+
+    /** Loads previous scores from local storage */
+    let leaderboard = document.getElementById('leaderboard');
+    let previousScores = JSON.parse(localStorage.getItem("highScores")) || [];
+    previousScores.sort((a, b) => parseInt(b.highScore) - parseInt(a.highScore));
+    let i = 0;
+    if (i < 3) {
+        previousScores.forEach(score => {
+            let tr = document.createElement("tr");
+            tr.innerHTML = `<td>${score.user}</td> <td>${score.highScore}</td>`;
+            tr.classList.add('table-data');
+            leaderboard.appendChild(tr);
+            i++;
+        });
+    } else {
+        return;
+    }
+
+    /** Saves scores to local storage */
+    const scoreSubmissionButton = document.getElementById("score-submission-button");
+    scoreSubmissionButton.addEventListener("click", function (e) {
+        let name = document.getElementById("user-name").value;
+        let submission = { user: name, highScore: score };
+
+        if (name == '') {
+            alert("Please enter a name");
+        } else {
+            previousScores.unshift(submission);
+            localStorage.setItem("highScores", JSON.stringify(previousScores));
+            let tr = document.createElement("tr");
+            tr.innerHTML = `<td>${name}</td><td>${score}</td>`;
+            tr.classList.add('table-data');
+            leaderboard.appendChild(tr);
+            document.getElementById("user-name").value = '';
+        }
+    });
+    clearSubmissionButtonClicked();
+    displayIncorrectArray();
+    hideIncorrectArray();
+};
+
 /** Function to end game and display score to user */
 let endGame = () => {
     /** Remove question counter and ul from page */
