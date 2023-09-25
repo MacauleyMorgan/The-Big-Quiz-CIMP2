@@ -89,3 +89,34 @@ The below image shows the error page displayed on screen sizes below 700px, to k
 
 ![404 Wireframe smaller screen](/assets/images/wireframes/404-wireframe-smaller.png "404 Wireframe Smaller screen size")
 ---
+# Technology utilisation
+## HTML
+HTML was the main language used to create the structural design of the website.
+## CSS
+The website was styled using a collapsible style sheet (CSS) externally in the folder.
+## JavaScript
+The website has been built using JavaScript utilities including ES6 concepts.
+## Visual Studio Code
+The website was developed using the Visual Studio Code IDE.
+## Github
+The source code for this website is hosted on Github.
+## Git
+Git was utilized in unison with github to push and commit to the repository of the source code.
+## Favicon.io
+This website was used to generate the favicon image then to download the image and use the file in the documents.
+## Figma
+This website was used to create wire frames and apply a planned structure and design for the website.
+## Chat GPT
+Chat GPT was used to generate the questions for the quiz using the following prompt 'Here is a JSON object containing a trivia question with multiple choices, using this format create me 10 more using the theme of "Enter a theme"'.
+
+`const questions = [
+    {
+        question: "What is the capital of Italy?",
+        choices: ["Berlin", "Madrid", "Rome", "Paris"],
+        correctAnswer: "Rome"
+    }
+]`
+
+I then used this template with the themes general, nature, kids, solar system etc then screened questions for duplicates resulting in 76 questions to pull from.
+
+---
