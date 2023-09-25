@@ -120,3 +120,38 @@ Chat GPT was used to generate the questions for the quiz using the following pro
 I then used this template with the themes general, nature, kids, solar system etc then screened questions for duplicates resulting in 76 questions to pull from.
 
 ---
+
+# Accessibility
+## Wave extension
+The wave extension was used on the site to generate data based on the accessibility of the website, the page was waved in both light and dark mode to ensure both themes are accessible in regards to contrast and semantic layout. In light mode the wave extension reported the following information.
+
+![accessibility](/assets/images/testing/wave/wave-index-light-structure.png 'Wave structure light mode')
+![accessibility](/assets/images/testing/wave/wave-index-light.png 'Wave contrast light mode')
+
+In dark mode the wave extension the wave extension gave this information.
+
+![accessibility](/assets/images/testing/wave/wave-index-dark-structure.png 'Wave structure dark mode')
+![accessibility](/assets/images/testing/wave/wave-index-dark-contrast.png 'Wave contrast dark mode')
+
+## Lighthouse Testing 
+The website was also assessed using the Google chrome lighthouse extension to generate statistics on SEO and accessibility, the findings from the extension are as follows.
+### Index Page
+Lighthouse data available for the index page when loaded in a mobile format.
+![accessibility](/assets/images/testing/lighthouse/index-lighthouse.png 'Index page mobile')
+
+Lighthouse data available for the index page when loaded in a desktop format.
+![accessibility](/assets/images/testing/lighthouse/index-lighthouse-desktop.png 'Index page desktop')
+
+### Quiz Page
+Lighthouse data displayed for quiz page when processed in the mobile format.
+![accessibility](/assets/images/testing/lighthouse/quiz-lighthouse.png 'Quiz page mobile')
+
+Lighthouse data displayed for quiz page when processed in the desktop format.
+![accessibility](/assets/images/testing/lighthouse/quiz-lighthouse-desktop.png 'Quiz page desktop')
+
+### 404 Page
+Lighthouse data for 404 page mobile view.
+![accessibility](/assets/images/testing/lighthouse/404-lighthouse.png '404 page mobile')
+
+Lighthouse data for 404 page in desktop format.
+![accessibility](/assets/images/testing/lighthouse/404-lighthouse-desktop.png '404 page desktop')
