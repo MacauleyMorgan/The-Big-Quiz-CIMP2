@@ -151,7 +151,9 @@ Lighthouse data displayed for quiz page when processed in the desktop format.
 
 ### 404 Page
 Lighthouse data for 404 page mobile view.
+
 ![accessibility](/assets/images/testing/lighthouse/404-lighthouse.png '404 page mobile')
 
 Lighthouse data for 404 page in desktop format.
+
 ![accessibility](/assets/images/testing/lighthouse/404-lighthouse-desktop.png '404 page desktop')
