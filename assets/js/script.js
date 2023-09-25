@@ -50,5 +50,42 @@ let checkAnswer = (userChoice) => {
     }
 };
 
+/** Function to end game and display score to user */
+let endGame = () => {
+    /** Remove question counter and ul from page */
+    answersList.innerHTML = "";
+    remainingQuestionPara.innerHTML = '';
 
+    /** Creates initial score form */
+    questionText.innerHTML =
+        `Thankyou for completing the quiz!<br> Your score is ${score} / ${maxQuestions} <br><br><a href="quiz.html" class="play-again">Retry</a>
+    <p id="save-text">To save your score, please enter your name below.</p>
+    <label for="score-submission"></label>
+    <input type="text" name="score-submission" placeholder="name" id="user-name"></input><br>
+    <button id="score-submission-button" class="endgame-button" type="submit">Save<br>score</button>
+    <button id="clear-submission" class="endgame-button" type="submit">Clear<br>scores</button>
+    <button id="show-incorrect" class="endgame-button" type="submit">Show<br>Incorrect</button>
+    <div id="incorrect-answers-div">
+        <table id="wrong-answers">
+            <tr class="wrong-answers">
+                <td class="table-question">Question</td>
+                <td class="table-answer">Answer</td>
+            </tr>
+        </table>
+        <button id="close-incorrect-answers">Close</button>
+    </div>
+    <div class="leaderboard">
+        <table id="leaderboard">
+            <tr>
+                <td>Name</td>
+                <td>Score</td>
+            </tr>
+        </table>
+    </div>
+    `;
+    let leaderboard = document.getElementById('leaderboard');
+    leaderboard.style.height = "2vh";
+    document.getElementById('leaderboard').overflow = "scroll";
+    endgamePrep();
+};
 loadNewQuestion();
