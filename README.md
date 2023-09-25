@@ -217,3 +217,36 @@ Click X icon|Load X in new tab|Load X in new tab|Pass
 ![Script JS](/assets/images/testing/script.png "Script JS")
 
 ![Theme JS](/assets/images/testing/theme.png "Theme JS")
+
+# Version control
+
+The website was coded inside visual studio code and pushed to the github repository "the-big-quiz-pp2".
+
+The github desktop app was used in order to commit the files into the repository by adding the name of the commit followed by a short description of the change before pressing the "commit" button and pushing it to the repository.
+
+## Github Pages
+
+1. Adding it to Github Pages
+2. To create the live link for the site, github pages was used in the following way.
+3. Navigate to settings
+4. Click on the Pages tab
+5. Select the branch "main"
+6. This will generate the link to the live site when created.
+7. Click Save
+
+The live site link can be found here [Live Site](https://macauleymorgan.github.io/the-big-quiz-pp2/ "Live Site")
+
+## Cloning
+
+1. Select the github repository to clone.
+2. CLick on the code button to access the dropdown menu.
+3. Download the file then open with IDE or copy Git URL from the HTTPS dialogue box.
+4. Open the console window in the IDE of your choice. 
+5. Use the 'git clone' command inside the terminal and follow the command with the url you wish to clone.
+6. A clone of the project will be created locally on your machine.
+
+# Credits
+## Chat GPT
+Chat GPT was used to generate the questions and answers in a given format for the quiz using prompts defining themes. 
+
+Site created for educational purposes only.
