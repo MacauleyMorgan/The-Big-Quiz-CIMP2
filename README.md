@@ -157,3 +157,63 @@ Lighthouse data for 404 page mobile view.
 Lighthouse data for 404 page in desktop format.
 
 ![accessibility](/assets/images/testing/lighthouse/404-lighthouse-desktop.png '404 page desktop')
+
+# Functional Testing
+**Tests index page**|**Expected Outcome**|**Actual Outcome**|**Pass/Fail**
+:-----:|:-----:|:-----:|:-----:
+Load index page|Load index.html|Loads index.html|Pass
+Resize to 701px|Detect media query|Query detected and restyled|Pass
+Resize to 501px|Detect media query|Query detected and restyled|Pass
+Click play button|Load quiz.html|Loads quiz.html|Pass
+Click instruction button|Show instructions|Displays instructions|Pass
+Click acknowledge button|Close instructions|Closes instructions|Pass
+Click facebook link in footer|Load Facebook in new tab|Loads Facebook in new tab|Pass
+Click instagram link in footer|Load Instagram in new tab|Load Instagram in new tab|Pass
+Click X link in footer|Load X in new tab|Load X in new tab|Pass
+ | | | 
+ | | | 
+Tests quiz page|Expected Outcome|Actual Outcome|Pass/Fail
+Load quiz page|Load quiz.html|Loads quiz.html|Pass
+Resize to 701px|Detect media query|Query detected and restyled|Pass
+Resize to 501px|Detect media query|Query detected and restyled|Pass
+Change to light theme|Changes sight to light mode|Triggers light mode|Pass
+Change to dark theme|Changes sight to dark mode|Triggers dark mode|Pass
+Click home button|Loads index.html in current tab|Loads index.html|Pass
+Click answer A|Submits choice A |Submits choice A to check answer function|Pass
+Click answer B|Submits choice B|Submits choice B to check answer function|Pass
+Click answer C|Submits choice C|Submits choice C to check answer function|Pass
+Click answer D|Submits choice D|Submits choice D to check answer function|Pass
+Check score counter for incorrect answer|Score does not increment|Score does not increment|Pass
+Check score counter for correct answer|Score tally increments|Score tally incremented correctly|Pass
+Check question count increments correctly|Counter at bottom will reduce by 1 each question|Counter at bottom reduced by 1 each question|Pass
+Save score submission via input|Save score and name into local storage and display on screen|Saved score and name into local storage as object and displays on screen|Pass
+Pass input invalid name|Window alert to submit valid name|Window alerts user to enter valid name|Pass
+Click clear score button|Clear object from local storage and set html to empty|Local storage cleared and leaderboard deleted|Pass
+Click show incorrect answers when incorrect is 1+|HTML to display questions in incorrect array and correct answer|HTML displays "No incorrect answers"|Pass
+Click show incorrect answers when score is 10/10|HTML to display "No incorrect answers"|HTML displays "No incorrect answers"|Pass
+Click close button on incorrect answers section|HTML set to "" and button to disappear|HTML set to "" and button to disappear|Pass
+ | | | 
+ | | | 
+404 Page Tests|Expected Outcome|Actual Outcome|Pass/Fail
+Load 404 page|Load 404.html|Loads 404.html|Pass
+Resize to 701px|Detect media query|Query detected and restyled|Pass
+Resize to 501px|Detect media query|Query detected and restyled|Pass
+Click home button|Load index.html in current tab|Loads index.html in current tab|Pass
+Click quiz button|Load quiz.html in current tab|Loads quiz.html in current tab|Pass
+Click facebook icon|Load facebook site in new tab|Loads Facebook in new tab|Pass
+Click instagram icon|Load instagram site in new tab|Load Instagram in new tab|Pass
+Click X icon|Load X in new tab|Load X in new tab|Pass
+
+# Validation Testing
+## HTML Validation Testing
+![Index HTML](/assets/images/testing/index.png "Index HTML")
+![Quiz HTML](/assets/images/testing/quiz.png "Quiz HTML")
+![404 HTML](/assets/images/testing/404.png "404 HTML")
+## CSS Validation Testing
+![Style CSS](/assets/images/testing/CSS.png "Style CSS")
+## Javascript Validation Testing
+![Modal JS](/assets/images/testing/modal.png "Modal JS")
+
+![Script JS](/assets/images/testing/script.png "Script JS")
+
+![Theme JS](/assets/images/testing/theme.png "Theme JS")
