@@ -1,0 +1,218 @@
+:root {
+    --primary-color: #e9ecef;
+    --secondary-color: #4895ef;
+    --tertiary-color: #fff;
+
+}
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Generic styles */
+body {
+    background-color: var(--primary-color);
+}
+
+
+/* Blue container */
+.container,
+.quiz-container {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+}
+
+/* White area holding the question*/
+#index-container,
+.main-quiz-container {
+    padding-block: 2vh;
+    background-color: var(--tertiary-color);
+    height: 80vh;
+    box-shadow: inset 0 0 1px;
+}
+
+header {
+    padding-block: 1vh;
+}
+/* Answers when loaded */
+li {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    width: 80vw;
+    margin-inline: 10vw;
+    margin-block: 2vh;
+    padding-block: 3vh;
+
+    border: 3px solid rgb(255, 205, 24);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li:hover,
+li:focus, 
+.clickable:hover, 
+.clickable:focus{
+    border: 3px solid var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    padding-block: 1vh;
+}
+/* All buttons and anchor tags */
+.clickable,
+button,
+.play-again {
+    background-color: var(--tertiary-color);
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+
+    border: 3px solid rgb(255, 205, 24);
+    border-radius: 5px;
+    cursor: pointer;
+    padding-inline: 1vw;
+}
+/* Home icon */
+#home-page-link {
+    padding-inline: 15vw;
+    background-color: #e9ecef;
+}
+
+/* Text displayed in blue container at top of page */
+.title {
+    padding-block: 1.5vh;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* Generic styling for tables displayed at end of quiz (leader board and incorrect answers) */
+table {
+    text-align: center;
+    height: 30px;
+    width: 90%;
+    margin-inline: 5%;
+}
+
+.table-data {
+    font-size: 0.8rem;
+    width: 50%;
+    background-color: #4895ef;
+}
+
+/* Classes and ID's */
+/* Instruction modal */
+#opening-paragraph {
+    width: 80%;
+    margin-inline: 10%;
+    font-size: 1.2rem;
+    margin-block: 4vh;
+}
+
+#modal-content {
+    margin-top: 4vh;
+    width: 80%;
+    margin-inline: 10%;
+    display: none;
+}
+
+/* Spacing for the theme text at beginning of page */
+#theme-switcher {
+    padding-block: 1.5vh;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+/* Question styling */
+#question-text {
+    width: 90%;
+    margin-inline: 5%;
+    font-size: 0.8rem;
+}
+
+/* Text for showing score and asking for name submission */
+#save-text {
+    margin-top: 2vh;
+}
+/* Buttons to save/clear scores and display incorrect answers */
+.endgame-button {
+    display: inline;
+    width: 30%;
+    font-size: 0.6rem;
+    padding-block: 2vh;
+    padding-inline: 1vh;
+}
+/* Input section at end of quiz */
+#user-name {
+    width: 100%;
+}
+
+/* Incorrect answer section at end of quiz */
+#incorrect-answers-div {
+    font-size: 0.6rem;
+}
+
+.wrong-answers {
+    font-size: 0.5rem;
+    margin-block: 5vh;
+}
+
+.table-question {
+    width: 70vw;
+}
+
+.table-answer {
+    width: 30vw;
+}
+
+#close-incorrect-answers {
+    display: none;
+}
+
+/* Buttons in 404 page */
+.error-page {
+display: grid;
+margin-block: 5vh;
+padding-inline: 5vh;
+padding-block: 5vh;
+border-radius: 5px;
+}
+
+.external-link{
+    margin-inline: 5vw;
+    font-size: 1.5rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 500px) {
+    li {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    #question-text {
+        font-size: 1.5rem;
+    }
+
+    #save-text {
+        font-size: 1.2rem;
+    }
+    /* Buttons in 404 page */
+    .error-page {
+    padding-inline:5vw;
+    padding-block: 3vh;
+    border-radius: 5px;
+    font-size:0.8rem;
+    }
+    
+    .button-containers{
+        margin-block:20vh;
+    }
+}
