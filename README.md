@@ -224,7 +224,7 @@ Click X icon|Load X in new tab|Load X in new tab|Pass
 
 # Version control
 
-The website was coded inside visual studio code and pushed to the github repository "the-big-quiz-pp2".
+The website was coded inside visual studio code and pushed to the github repository "The-Big-Quiz-CIMP2".
 
 The github desktop app was used in order to commit the files into the repository by adding the name of the commit followed by a short description of the change before pressing the "commit" button and pushing it to the repository.
 
@@ -238,7 +238,7 @@ The github desktop app was used in order to commit the files into the repository
 6. This will generate the link to the live site when created.
 7. Click Save
 
-The live site link can be found here [Live Site](https://macauleymorgan.github.io/the-big-quiz-pp2/ "Live Site")
+The live site link can be found here [Live Site](https://macauleymorgan.github.io/The-Big-Quiz-CIMP2/ "Live Site")
 
 ## Cloning
 
