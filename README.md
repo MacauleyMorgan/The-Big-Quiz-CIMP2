@@ -1,6 +1,7 @@
 # The Big Quiz CI MP2
 
 This project was created for educational purposes to demonstrate knowledge of javascript core concepts and to serve as a simple trivia quiz for users.
+The live site link can be found here [Live Site](https://macauleymorgan.github.io/The-Big-Quiz-CIMP2/ "Live Site")
 
 ---
 # Mockups
