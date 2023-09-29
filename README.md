@@ -5,9 +5,7 @@ The live site link can be found here [Live Site](https://macauleymorgan.github.i
 
 ---
 # Mockups
-![Index Mockup](/assets/images/mockups/index-mockup.png 'Index Mockup')
-![Quiz Mockup](/assets/images/mockups/quiz-mockup.png 'Quiz Mockup')
-![404 Mockup](/assets/images/mockups/404-mockup.png '404 Mockup')
+![Multi-page Mockup](/assets/images/mockups/multipage-mockup.png 'Multi-page Mockup')
 # User Stories
 ## First time visitors
 - As a first time user I want to be able to get feedback on my performance in the quiz, in the form of a scoring system.
