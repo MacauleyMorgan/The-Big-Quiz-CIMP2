@@ -26,7 +26,6 @@ The live site link can be found here [Live Site](https://macauleymorgan.github.i
 ---
 # Game flow
 The flow of the game is in a structured format and begins when the user selects the play button on the index page which directs them to the quiz page which will load an initial question and 4 choices.
-
 Upon loading into the quiz page the theme switcher will become available to toggle light and dark mode for a better user experience.
 
 ## Play
@@ -35,9 +34,9 @@ When the user selects an answer option by clicking the list item with that value
 
 Once a question from the array is chosen, it will be removed from the array to prevent the same question appearing twice in the quiz. Then the question will be displayed and the question index incremented until the 10 questions have been answered.
 
-## Leaderboard and Incorrect answers array
+## Leader board and Incorrect answers array
 
-Once the user has answered all ten questions the game will end and the screen will show the score and allow for an input of name to save the score. The score is then stored in the local storage as a JSON object for use in the leaderboard in the future. Tl
+Once the user has answered all ten questions the game will end and the screen will show the score and allow for an input of name to save the score. The score is then stored in the local storage as a JSON object for use in the leader board in the future.
 
 The menu will also allow for the user to view any incorrect answers and show them the question and correct answer for future learning opportunities. The leaderboard is loaded at the bottom of the page in the form of the top 3 scores stored in the local storage. The user's score is displayed below for a comparison and on reload will be sorted and added to the top 3 if necessary. It also allows for the deletion of the local storage data via to clear score button if the user would like to reset the saved scores.
 
