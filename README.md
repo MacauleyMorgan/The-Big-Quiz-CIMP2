@@ -226,7 +226,7 @@ Click instagram icon|Load instagram site in new tab|Load Instagram in new tab|Pa
 Click X icon|Load X in new tab|Load X in new tab|Pass
 
 # Bugs
-## Leaderboaord bug
+## Leaderboard bug
 Leaderboard should take a users submission and insert it correctly into the array and update the scoreboard accordingly on submission of name, instead it appends the score to the bottom of the board. In future, the submission should sort after submission.
 
 # Validation Testing
